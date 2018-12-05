@@ -1,3 +1,56 @@
 .oxmod-related-news-x{
 /* CSS */
+	padding:5px;
+	.scrollx{
+		white-space: nowrap;
+		width:100%;
+		overflow-x: auto;
+		overflow-y: hidden;
+		&::-webkit-scrollbar{
+			height:0;
+		}
+	}
+	.item{
+		width:44%;
+		display: inline-block;
+		vertical-align: top;
+		padding: 5px;
+		white-space: normal;
+		//border-radius: 5px;
+		overflow: hidden;
+		font-size: 0;
+		
+		>img{
+			width:100%;
+			padding-bottom: 60%;
+			height: 0;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center center;
+			border-top-right-radius: 5px;
+			border-top-left-radius: 5px;
+		}
+		>.textbox{
+			height: 70px;
+			width:100%;
+			display: inline-block;
+			border:solid .5px #f8f8f8;
+			border-top:none;
+			box-sizing: border-box;
+			border-bottom-right-radius: 5px;
+			border-bottom-left-radius: 5px;
+			padding:8px;
+			>span{
+				font-size: 13px;
+				
+				color:#666;
+				overflow : hidden;
+				text-overflow: ellipsis;
+				display: -webkit-box;
+				-webkit-line-clamp: 3;
+				-webkit-box-orient: vertical;
+				white-space: normal;
+			}
+		}
+	}
  }
